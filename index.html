@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Development Test - GUL MERIC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <section class="hero-section">
+        <div class="hero-image w-50">
+            <img src="assets/img/bg-image.svg" alt="Background Image" align="left">
+        </div>
+        <div class="hero-content">
+            <div class="row hero-detail">
+                <h1>Everyday <span></span>, we have something to suit every occasion.</h1>
+                <p class="d-block d-sm-none">At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit
+                    tincidunt semper eu proin leo gravida cursus.</p>
+                <a href="#" class="hero-href" title="Shop All Everyday Items">Shop All Everyday Items</a>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper productSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/productcard/product-1.svg" alt="Signature Hoodie">
+                            </a>
+                            <div class="h-60">
+                                <span class="product-name">365 Signature Hoodie</span>
+                            </div>
+                            <div class="row absolute">
+                                <span class="product-price">€33.95</span>
+                                <div class="col-sm-12">
+                                    <div>
+                                        <span class="dot bg-blue"></span>
+                                        <span class="dot bg-nude"></span>
+                                        <span class="dot bg-pink"></span>
+                                        <span class="dot bg-green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/productcard/product-2.svg" alt="Skinny Jeans">
+                            </a>
+                            <div class="h-60">
+                                <span class="product-name">Organic Skinny High Waist Jeans</span>
+                            </div>
+                            <div class="row absolute">
+                                <span class="product-price">€33.95</span>
+                                <div class="col-sm-12">
+                                    <div>
+                                        <span class="dot bg-blue"></span>
+                                        <span class="dot bg-nude"></span>
+                                        <span class="dot bg-pink"></span>
+                                        <span class="dot bg-green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/productcard/product-3.svg" alt="Skinny Raw Hem Jeans">
+                            </a>
+                            <div class="h-60">
+                                <span class="product-name">Organic Skinny High Waist Raw Hem Jeans</span>
+                            </div>
+                            <div class="row absolute">
+                                <span class="product-price">€33.95</span>
+                                <div class="col-sm-12">
+                                    <div>
+                                        <span class="dot bg-blue"></span>
+                                        <span class="dot bg-nude"></span>
+                                        <span class="dot bg-pink"></span>
+                                        <span class="dot bg-green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-sm-none">
+                        <div class="swiper-button-next-custom" aria-label="Next slide"><span
+                                class="icon-chevron"></span></div>
+                        <div class="swiper-button-prev-custom" aria-label="Previous slide"><span
+                                class="icon-chevron icon-rotate"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+        var swiper = new Swiper(".productSwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next-custom",
+                prevEl: ".swiper-button-prev-custom",
+            },
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    width: 220,
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2.5,
+                },
+                // when window width is >= 992px
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 1
+                },
+                // when window width is >= 1200px
+                1200: {
+                    slidesPerView: 1.50,
+                    spaceBetween: 20
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
